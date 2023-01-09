@@ -1,3 +1,5 @@
+@import url('https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4taVIGxA.woff2');
+ 
 /*
 Colors:
 
@@ -5,4 +7,142 @@ Text: 1A1A1A
 Green: #00B172
 White: #FFF
 
+*/
+
+* {
+    font-family: "Opensans", sans-serif;
+    font-weight: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 78px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.nav-bar {
+    display: flex;
+    position: fixed;
+    height: 4em;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.nav-bar ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.title-background {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: 1200px;
+    color: white;
+}
+
+.title-background p {
+    font-size: 30px;
+    text-align: center;
+}
+
+#whats-on h2 {
+    text-align: center;
+    text-decoration: underline 3px #00B172;
+    text-underline-offset: 10px;
+}
+
+.whats-on-spotify {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whats-on-spotify div {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+
+.whats-on-spotify h3 {
+    color: darkgreen;
+    font-weight: bold;
+    color: #00B172;
+}
+
+.whats-on-spotify img {
+    width: 100px;
+    height: 80px;
+}
+
+#features {
+    margin: 0 25px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00B172;
+    color: white;
+}
+
+#features h2 {
+    text-decoration: underline 3px white;
+    text-underline-offset: 10px;
+}
+
+#features h3 {
+    font-weight: bold;
+}
+
+.features-logo img {
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+}
+
+.features-app img {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/*
+flex-direction: row, row-reverse, column, column-reverse
+justify-content: flex-start (default), flex-end, center, space-between, space-around, space-evenly
+(we can horizontally arrange the items inside the flex container)
+align-items: flex-start (default), flex-end, center, baseline
+(vertically arrange items in flex container)
 */
